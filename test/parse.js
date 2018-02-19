@@ -3171,7 +3171,7 @@ describe('tagged namepaths', function () {
                 "}"
             ].join('\n'), {});
         res.tags.should.have.length(1);
-        res.tags[0].description.should.be('class A {\n  @observable a = 123\n }');
+        res.tags[0].description.should.equal('class A {\n  @observable a = 123\n}');
     });
 });
 
