@@ -3161,6 +3161,18 @@ describe('tagged namepaths', function () {
             ].join('\n'), {});
         res.tags.should.have.length(0);
     });
+
+    it ('es6 decorator support:', function () {
+        var res = doctrine.parse(
+            [
+                "@example",
+                "class A {",
+                "  \\@observable a = 123",
+                "}"
+            ].join('\n'), {});
+        res.tags.should.have.length(1);
+        res.tags[0].description.should.be('class A {\n  @observable a = 123\n }');
+    });
 });
 
 /* vim: set sw=4 ts=4 et tw=80 : */
