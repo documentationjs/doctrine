@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/eslint/doctrine/compare/v2.0.0...v2.0.1) (2018-04-11)
+
+
+### Bug Fixes
+
+* Allow array indexes in names ([#193](https://github.com/eslint/doctrine/issues/193)) ([4f028d8](https://github.com/eslint/doctrine/commit/4f028d8))
+* support type expression for [@this](https://github.com/this) tag (fixes [#181](https://github.com/eslint/doctrine/issues/181)) ([#182](https://github.com/eslint/doctrine/issues/182)) ([07f4751](https://github.com/eslint/doctrine/commit/07f4751))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 v2.1.0 - January 6, 2018
 
 * 827f314 Update: support node ranges (fixes #89) (#190) (Teddy Katz)
