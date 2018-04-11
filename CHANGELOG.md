@@ -1,3 +1,7 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 v2.1.0 - January 6, 2018
 
 * 827f314 Update: support node ranges (fixes #89) (#190) (Teddy Katz)
