@@ -38,7 +38,8 @@
     "semver": "^5.0.3",
     "shelljs": "^0.5.3",
     "shelljs-nodecli": "^0.1.1",
-    "should": "^5.0.1"
+    "should": "^5.0.1",
+    "standard-version": "^4.3.0"
   },
   "license": "Apache-2.0",
   "scripts": {
@@ -46,7 +47,7 @@
     "test": "nyc mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib/",
-    "release": "eslint-release",
+    "release": "standard-version",
     "ci-release": "eslint-ci-release",
     "alpharelease": "eslint-prerelease alpha",
     "betarelease": "eslint-prerelease beta"
