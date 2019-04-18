@@ -1383,6 +1383,23 @@ describe('parse', function () {
         e1.fields.should.containEql({type: 'FieldType', key: 'error',
           value: {type: 'NameExpression', name: 'Error'}});
     });
+
+    it('yields', function () {
+        var res = doctrine.parse(
+            [
+                "/**",
+                " * @yields {String} userName",
+                "*/"
+            ].join('\n'), { unwrap: true });
+        res.tags.should.have.length(1);
+        res.tags[0].should.have.property('title', 'yields');
+        res.tags[0].should.have.property('description', 'userName');
+        res.tags[0].should.have.property('type');
+        res.tags[0].type.should.eql({
+            type: 'NameExpression',
+            name: 'String'
+        });
+    });
 });
 
 describe('parseType', function () {
